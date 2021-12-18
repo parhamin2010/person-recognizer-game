@@ -1,0 +1,31 @@
+Time : 17:40:13
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nationality' in 'where clause'
+Raw SQL : select * from images where nationality=:nations
+
+Time : 17:40:03
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nationality' in 'where clause'
+Raw SQL : select * from images where `nationality`=:nations
+
+Time : 17:39:45
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nations' in 'where clause'
+Raw SQL : select * from images where `nations`=:nations
+
+Time : 17:32:57
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=? OR nations=?' at line 1
+Raw SQL : SELECT * FROM images nations=? OR nations=?
+
+Time : 17:24:12
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ? OR nations = ? OR' at line 1
+Raw SQL : SELECT * FROM images nations = ? OR nations = ? OR
+
+Time : 17:23:14
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ?  nations = ?' at line 1
+Raw SQL : SELECT * FROM images nations = ?  nations = ?
+
+Time : 17:22:25
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM images' at line 1
+Raw SQL : SELECT  FROM images
+
+Time : 17:20:25
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM images' at line 1
+Raw SQL : SELECT  FROM images
