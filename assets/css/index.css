@@ -210,6 +210,30 @@ body {
     width: 300px;
     border-radius: 10px;
     position: absolute;
-    right: 35%;
+    right: 36%;
     top: 0;
+}
+
+#alerter{
+    color: white !important;
+    width: 25%;
+    margin: 0 auto;
+    position: absolute !important;
+    top: 40% !important;
+    right: 37.5%;
+    border-radius: 25px;
+    font-size: 35pt;
+    opacity: 0.8;
+}
+
+#success-alerter{
+    color: white !important;
+    width: 45%;
+    margin: 0 auto;
+    position: absolute !important;
+    top: 40% !important;
+    right: 27.5%;
+    border-radius: 25px;
+    font-size: 18pt;
+    opacity: 0.8;
 }
